@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Boomi Integration Routine</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li><a href="index.html">Boomi Integration Routine Status</a></li>
+      <li><a href="default.asp">Graphs</a></li>
+      <li><a href="news.asp">THIS IS</a></li>
+      <li><a href="contact.asp">A DUMMY</a></li>
+      <li><a href="about.asp">PAGE</a></li>
+    </ul>
+  </header>
+
+  <div class="row" id="filter">
+    <form>
+      <div class="form-group col-sm-3 col-xs-6">
+        <select data-filter="make" class="filter-make">
+        <option value="">Filter By</option>
+        <option value="">Show All</option>
+        <option value="">Date</option>
+        <option value="">Name</option>
+        <option value="">Failed</option>
+        <option value="">Success</option>
+        <option value="">Active</option>
+        <option value="">Inactive</option>
+      </select>
+      </div>
+
+    </form>
+  </div>
+  <div class="container">
+    <div class="row" id="search">
+      <form id="search-form" action="" method="POST" enctype="multipart/form-data">
+        <div class="form-group col-xs-9">
+          <input class="form-control" type="text" placeholder="Search keywords" />
+        </div>
+        <div class="form-group col-xs-3">
+          <button type="submit" class="btn-search">Search</button>
+        </div>
+      </form>
+    </div>
+
+
+    <table>
+
+      <tbody class="labels">
+        <tr>
+          <td colspan="5">
+            <i class="fas fa-caret-down"></i>
+            <label for="process1">Failed -Process Id:1</label>
+            <a class="info" href="#popup1"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+  </div>
+  <input type="checkbox" name="process1" id="process1" data-toggle="toggle">
+  </td>
+  <td>
+    <input id="selectAll" type="checkbox" name="selectAll" value="">Select/Deselect all
+  </td>
+  <td>
+    <i class="fas fa-redo"></i>Retry
+  </td>
+  </tr>
+  </tbody>
+
+  <tbody class="hide">
+
+    <tr class="processNames">
+      <td>Process Name:</td>
+      <td>upsert sj account from sf account - PROCESS</td>
+      <td>Parent Process Name:</td>
+      <td>Magento - Salesforce Contacts + Accounts Sync</td>
+      <td>Num of Failed Records:</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>
+        <input class="individual"type="checkbox" name="" value=""> Date: </td>
+      <td>(failed) RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+
+    </tr>
+
+  </tbody>
+
+  <tbody class="labels">
+    <tr>
+      <td colspan="5">
+        <i class="fas fa-caret-down"></i>
+        <label for="process2">Failed-Process ID:2</label>
+        <a class="info" href="#popup1"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+
+        <input type="checkbox" name="process2" id="process2" data-toggle="toggle">
+      </td>
+      <td>
+        <input type="checkbox" name="" value="">Select/Deselect all
+      </td>
+      <td>
+        <i class="fas fa-redo"></i>Retry
+      </td>
+    </tr>
+  </tbody>
+
+  <tbody class="hide">
+
+    <tr class="processNames">
+      <td>Process Name:</td>
+      <td>upsert sj account from sf account - PROCESS</td>
+      <td>Parent Process Name:</td>
+      <td>Magento - Salesforce Contacts + Accounts Sync</td>
+      <td>Num of Failed Records:</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>(failed) RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+
+    </tr>
+
+  </tbody>
+
+  <tbody class="labels">
+    <tr>
+      <td colspan="5">
+        <i class="fas fa-caret-down"></i>
+        <label for="process3">Failed -Process ID:3</label>
+        <a class="info" href="#popup1"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+        <input type="checkbox" name="process3" id="process3" data-toggle="toggle">
+      </td>
+      <td>
+        <input type="checkbox" name="" value="">Select/Deselect all
+      </td>
+      <td>
+        <i class="fas fa-redo"></i>Retry
+      </td>
+    </tr>
+  </tbody>
+
+  <tbody class="hide">
+
+    <tr class="processNames">
+      <td>Process Name:</td>
+      <td>upsert sj account from sf account - PROCESS</td>
+      <td>Parent Process Name:</td>
+      <td>Magento - Salesforce Contacts + Accounts Sync</td>
+      <td>Num of Failed Records:</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>(failed) RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: true</td>
+      <td>Resolved</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: true</td>
+      <td>Resolved</td>
+      <td></td>
+      <td></td>
+
+    </tr>
+
+  </tbody>
+  <tbody class="labels">
+    <tr>
+      <td colspan="5">
+        <i class="fas fa-caret-down"></i>
+        <label for="process4">Failed- Process ID:4</label>
+        <a class="info" href="#popup1"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+        <input type="checkbox" name="process4" id="process4" data-toggle="toggle">
+      </td>
+      <td>
+        <input type="checkbox" name="" value="">Select/Deselect all
+      </td>
+      <td>
+        <i class="fas fa-redo"></i>Retry
+      </td>
+    </tr>
+  </tbody>
+
+  <tbody class="hide">
+
+    <tr class="processNames">
+      <td>Process Name:</td>
+      <td>upsert sj account from sf account - PROCESS</td>
+      <td>Parent Process Name:</td>
+      <td>Magento - Salesforce Contacts + Accounts Sync</td>
+      <td>Num of Failed Records:</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>(failed) RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+
+    </tr>
+
+  </tbody>
+
+  <tbody class="labels">
+    <tr>
+      <td colspan="5">
+        <i class="fas fa-caret-down"></i>
+        <label for="process5">Failed -process ID:5</label>
+        <a class="info" href="#popup1"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+        <input type="checkbox" name="process5" id="process5" data-toggle="toggle">
+      </td>
+      <td>
+        <input type="checkbox" name="" value="">Select/Deselect all
+      </td>
+      <td>
+        <i class="fas fa-redo"></i>Retry
+      </td>
+    </tr>
+  </tbody>
+
+  <tbody class="hide">
+
+    <tr class="processNames">
+      <td>Process Name:</td>
+      <td>upsert sj account from sf account - PROCESS</td>
+      <td>Parent Process Name:</td>
+      <td>Magento - Salesforce Contacts + Accounts Sync</td>
+      <td>Num of Failed Records:</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>(failed) RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+
+    </tr>
+
+  </tbody>
+
+  <tbody class="labels">
+    <tr>
+      <td colspan="5">
+        <i class="fas fa-caret-down"></i>
+        <label for="process6">Failed -Process ID:6</label>
+        <a class="info" href="#popup1"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+        <input type="checkbox" name="process6" id="process6" data-toggle="toggle">
+      </td>
+      <td>
+        <input type="checkbox" name="" value="">Select/Deselect all
+      </td>
+      <td>
+        <i class="fas fa-redo"></i>Retry
+      </td>
+    </tr>
+  </tbody>
+
+  <tbody class="hide">
+
+    <tr class="processNames">
+      <td>Process Name:</td>
+      <td>upsert sj account from sf account - PROCESS</td>
+      <td>Parent Process Name:</td>
+      <td>Magento - Salesforce Contacts + Accounts Sync</td>
+      <td>Num of Failed Records:</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>(failed) RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+
+    </tr>
+
+  </tbody>
+
+  <tbody class="labels">
+    <tr>
+      <td colspan="5">
+        <i class="fas fa-caret-down"></i>
+        <label for="process7">Failed -PROCESS ID: 7</label>
+        <a class="info" href="#popup1"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+        <input type="checkbox" name="process7" id="process7" data-toggle="toggle">
+      </td>
+      <td>
+        <input type="checkbox" name="" value="">Select/Deselect all
+      </td>
+      <td>
+        <i class="fas fa-redo"></i>Retry
+      </td>
+    </tr>
+  </tbody>
+
+  <tbody class="hide">
+
+    <tr class="processNames">
+      <td>Process Name:</td>
+      <td>upsert sj account from sf account - PROCESS</td>
+      <td>Parent Process Name:</td>
+      <td>Magento - Salesforce Contacts + Accounts Sync</td>
+      <td>Num of Failed Records</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>(failed) RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+
+    </tr>
+
+  </tbody>
+
+  <tbody class="labels">
+    <tr>
+      <td colspan="5">
+        <i class="fas fa-caret-down"></i>
+        <label for="process8">Failed - PROCESS ID:8 </label>
+        <a class="info" href="#popup1"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+        <input type="checkbox" name="process8" id="process8" data-toggle="toggle">
+      </td>
+      <td>
+        <input type="checkbox" name="" value="">Select/Deselect all
+      </td>
+      <td>
+        <i class="fas fa-redo"></i>Retry
+      </td>
+    </tr>
+  </tbody>
+
+  <tbody class="hide">
+
+    <tr class="processNames">
+      <td>Process Name:</td>
+      <td>upsert sj account from sf account - PROCESS</td>
+      <td>Parent Process Name:</td>
+      <td>Magento - Salesforce Contacts + Accounts Sync</td>
+      <td>Num of Failed Records:</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>(failed) RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="" value=""> Date: </td>
+      <td>RecordID: </td>
+      <td>Error Message: SF_ERROR: ENTITY_IS_DELETED OBJ: Contact - entity is deleted</td>
+      <td>Retry: false</td>
+      <td>Unresolved</td>
+      <td></td>
+      <td></td>
+
+    </tr>
+
+  </tbody>
+
+  </table>
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <h2>Upsert sj account from sf account -PROCESS</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <p>Process id: 2</p>
+        <p>Error: Status: FAILED_ACTIVATION MESSAGE:OBJ:Order- An order must have at least one product</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Boomi Integration Routine</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li><a href="index.html">Boomi Integration Routine Status</a></li>
+      <li><a href="default.asp">Graphs</a></li>
+      <li><a href="news.asp">THIS IS</a></li>
+      <li><a href="contact.asp">A DUMMY</a></li>
+      <li><a href="about.asp">PAGE</a></li>
+    </ul>
+  </header>
+
+  <div class="row" id="filter">
+    <form>
+      <div class="form-group col-sm-3 col-xs-6">
+        <select data-filter="make" class="filter-make">
+        <option value="">Filter By</option>
+        <option value="">Show All</option>
+        <option value="">Date</option>
+        <option value="">Name</option>
+        <option value="">Failed</option>
+        <option value="">Success</option>
+        <option value="">Active</option>
+        <option value="">Inactive</option>
+      </select>
+      </div>
+
+    </form>
+  </div>
+  <div class="container">
+    <div class="row" id="search">
+      <form id="search-form" action="" method="POST" enctype="multipart/form-data">
+        <div class="form-group col-xs-9">
+          <input class="form-control" type="text" placeholder="Search keywords" />
+        </div>
+        <div class="form-group col-xs-3">
+          <button type="submit" class="btn-search">Search</button>
+        </div>
+      </form>
+    </div>
+
+
+    <table>
+
+      <thead>
+        <tr>
+          <th>Boomi Process Name</th>
+          <th></th>
+          <th>
+              <a href="failed-records.html"><i class="fas fa-exclamation-triangle"></i></a>
+          </th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody class="labels">
+        <tr>
+          <td colspan="5">
+            <i class="fas fa-caret-down"></i>
+            <label for="process1">upsert sj account from sf account - PROCESS</label>
+            <a class="info" href="#popup1"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+  </div>
+  <input type="checkbox" name="process1" id="process1" data-toggle="toggle">
+  </td>
+  </tr>
+  </tbody>
+
+  <tbody class="hide">
+    <tr>
+      <td>Parent Process Name:</td>
+      <td>Magento - Salesforce Contacts + Accounts Sync</td>
+      <td>id: 8</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Active</td>
+      <td><input type="checkbox" class="toggle-input" name="toggle" id="toggle">
+      <label for="toggle"></label> disable/enable</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Last Run time:Tuesday, April 12, 2018 9:02 PM </td>
+
+      <td>Duration: </td>
+      <td>Num of Failed Records:</td>
+      <td>Num of Records: </td>
+      <td></td>
+
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+
+  <tbody class="labels">
+    <tr>
+      <td colspan="5">
+        <i class="fas fa-caret-down"></i>
+        <label for="process2">m.customer to sj.contact + sj.account - PROCESS</label>
+        <a class="info" href="#popup1"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+
+        <input type="checkbox" name="process2" id="process2" data-toggle="toggle">
+      </td>
+    </tr>
+  </tbody>
+
+  <tbody class="hide">
+    <tr>
+      <td>Parent Process Name:</td>
+      <td>[insert name here]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Active</td>
+      <td><input type="checkbox" class="toggle-input" name="toggle" id="toggle">
+      <label for="toggle"></label> disable/enable</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Last Run time: </td>
+      <td>Tuesday, April 12, 2018 9:02 PM</td></td>
+      <td>Duration: </td>
+      <td>Num of Records: </td>
+
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+
+  <tbody class="labels">
+    <tr>
+      <td colspan="5">
+        <i class="fas fa-caret-down"></i>
+        <label for="process3">updated sj.contacts to sf.contacts - PROCESS</label>
+        <a class="info" href="#popup1"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+        <input type="checkbox" name="process3" id="process3" data-toggle="toggle">
+      </td>
+    </tr>
+  </tbody>
+
+  <tbody class="hide">
+    <tr>
+      <td>Parent Process Name:</td>
+      <td>[insert name here]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Active</td>
+      <td><input type="checkbox" class="toggle-input" name="toggle" id="toggle">
+      <label for="toggle"></label> disable/enable</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Last Run time: </td>
+      <td>Tuesday, April 12, 2018 9:02 PM</td></td>
+      <td>Duration: </td>
+      <td>Num of Records: </td>
+
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+
+  <tbody class="labels">
+    <tr>
+      <td colspan="5">
+        <i class="fas fa-caret-down"></i>
+        <label for="process4">sj.contact to m.customer - PROCESS </label>
+        <a class="info" href="#popup1"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+        <input type="checkbox" name="process4" id="process4" data-toggle="toggle">
+      </td>
+    </tr>
+  </tbody>
+
+  <tbody class="hide">
+    <tr>
+      <td>Parent Process Name:</td>
+      <td>[insert name here]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Active</td>
+      <td><input type="checkbox" class="toggle-input" name="toggle" id="toggle">
+      <label for="toggle"></label> disable/enable</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Last Run time: </td>
+      <td>Tuesday, April 12, 2018 9:02 PM</td></td>
+      <td>Duration: </td>
+      <td>Num of Records: </td>
+
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+  <tbody class="labels">
+    <tr>
+      <td colspan="5">
+        <i class="fas fa-caret-down"></i>
+        <label for="process5">Magento - Salesforce Contacts + Accounts Sync </label>
+        <a class="info" href="#popup1"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+        <input type="checkbox" name="process5" id="process5" data-toggle="toggle">
+      </td>
+    </tr>
+  </tbody>
+
+  <tbody class="hide">
+    <tr>
+      <td>Parent Process Name:</td>
+      <td>[insert name here]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Active</td>
+      <td><input type="checkbox" class="toggle-input" name="toggle" id="toggle">
+      <label for="toggle"></label> disable/enable</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Last Run time: </td>
+      <td>Tuesday, April 12, 2018 9:02 PM</td></td>
+      <td>Duration: </td>
+      <td>Num of Records: </td>
+
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+
+  <tbody class="labels">
+    <tr>
+      <td colspan="5">
+        <i class="fas fa-caret-down"></i>
+        <label for="process6">Magento - Salesforce Orders Sync</label>
+        <a class="info" href="#popup1"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+        <input type="checkbox" name="process6" id="process6" data-toggle="toggle">
+      </td>
+    </tr>
+  </tbody>
+
+  <tbody class="hide">
+    <tr>
+      <td>Parent Process Name:</td>
+      <td>[insert name here]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Active</td>
+      <td><input type="checkbox" class="toggle-input" name="toggle" id="toggle">
+      <label for="toggle"></label> disable/enable</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Last Run time: </td>
+      <td>Tuesday, April 12, 2018 9:02 PM</td></td>
+      <td>Duration: </td>
+      <td>Num of Records: </td>
+
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+
+  <tbody class="labels">
+    <tr>
+      <td colspan="5">
+        <i class="fas fa-caret-down"></i>
+        <label for="process7">upsert sj contact from sf contact - PROCESS</label>
+        <a class="info" href="#popup1"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+        <input type="checkbox" name="process7" id="process7" data-toggle="toggle">
+      </td>
+    </tr>
+  </tbody>
+
+  <tbody class="hide">
+    <tr>
+      <td>Parent Process Name:</td>
+      <td>[insert name here]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Active</td>
+      <td><input type="checkbox" class="toggle-input" name="toggle" id="toggle">
+      <label for="toggle"></label> disable/enable</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Last Run time: </td>
+      <td>Tuesday, April 12, 2018 9:02 PM</td></td>
+      <td>Duration: </td>
+      <td>Num of Records: </td>
+
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+
+  <tbody class="labels">
+    <tr>
+      <td colspan="5">
+        <i class="fas fa-caret-down"></i>
+        <label for="process8">sj.orders and sj.orderitem to sf.order and sf.orderitem - PROCESS </label>
+        <a class="info" href="#popup1"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+        <input type="checkbox" name="process8" id="process8" data-toggle="toggle">
+      </td>
+    </tr>
+  </tbody>
+
+  <tbody class="hide">
+    <tr>
+      <td>Parent Process Name:</td>
+      <td>[insert name here]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Active</td>
+      <td><input type="checkbox" class="toggle-input" name="toggle" id="toggle">
+      <label for="toggle"></label> disable/enable</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Last Run time: </td>
+      <td>Tuesday, April 12, 2018 9:02 PM</td></td>
+      <td>Duration: </td>
+      <td>Num of Records: </td>
+
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+
+  <tbody class="labels">
+    <tr>
+      <td colspan="5">
+        <i class="fas fa-caret-down"></i>
+        <label for="process9">m.order and m.orderitem to sj.order and sj.orderitem - PROCESS</label>
+        <a class="info" href="#popup1"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+        <input type="checkbox" name="process9" id="process9" data-toggle="toggle">
+      </td>
+    </tr>
+  </tbody>
+
+  <tbody class="hide">
+    <tr>
+      <td>Parent Process Name:</td>
+      <td>[insert name here]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Active</td>
+      <td><input type="checkbox" class="toggle-input" name="toggle" id="toggle">
+      <label for="toggle"></label> disable/enable</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Last Run time: </td>
+      <td>Tuesday, April 12, 2018 9:02 PM</td></td>
+      <td>Duration: </td>
+      <td>Num of Records: </td>
+
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+
+  </table>
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <h2>Upsert sj account from sf account -PROCESS</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <p>Process id: 2</p>
+        <p>Error: Status: FAILED_ACTIVATION MESSAGE:OBJ:Order- An order must have at least one product</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+
+</body>
+
+</html>
